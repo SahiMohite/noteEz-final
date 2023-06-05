@@ -1,0 +1,146 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Output</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">  -->
+
+    <link href="/stylesheets/style1.css" rel="stylesheet" type="text/css">
+    <script>
+        function showTable() {
+            document.getElementById('table1').style.visibility = "visible";
+        }
+    </script>
+</head>
+
+<body onload="javascript:hideTable()">
+    <nav class="navbar sticky-top navbar-expand-lg" style="padding-top: 23px; font-size: 20px;">
+        <!-- navbar sticky-top navbar-light bg-light -->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="font-size: 25px;">NoteEz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="filterby" style="margin-bottom: 100px;">
+        <div class="subfilterby">
+            <form>
+                <fieldset
+                    style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); padding: 4px 15px;">
+                    <legend>Filter By:</legend>
+                    <div class="mb-3">
+                        <label for="filter" class="form-label">Branch Name</label>
+                        <select id="filter" class="form-select">
+                            <option>--Choose Branch--</option>
+                            <option>Computer Science</option>
+                            <option>Mechanical Engg.</option>
+                            <option>Electrical Engg.</option>
+                            <option>Chemical Engg.</option>
+                            <option>Civil Engg.</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="filter" class="form-label">Course Name</label>
+                        <select id="filter" class="form-select">
+                            <option>--Choose Course--</option>
+                            <option>Data Structures and Algorithms</option>
+                            <option>Database Systems</option>
+                            <option>OOPS</option>
+                            <option>Discrete Mathematics</option>
+                        </select>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Concise Notes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Detailed Notes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                        <label class="form-check-label" for="flexRadioDefault3">
+                            Numerical Oriented
+                        </label>
+                    </div>
+                    <button id="btn" onclick="javascript:showTable();" type="button" class="btn btn-primary"
+                        style="margin-top: 15px; width: 150px;">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+        <table class="table" id="table1">
+            <thead>
+                <tr>
+                    <th scope="col">S.No.</th>
+                    <th scope="col">Faculty</th>
+                    <th scope="col">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Prabhakar N</td>
+                    <td>
+                        <form action="/download-file1">
+                            <button type="submit" class="btn btn-primary">Download</button>
+                        </form>
+                           </td>
+                            <!-- <button type="submit">Download</button> -->
+                       
+                        
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Anabarasi M</td>
+                    <td>
+                        <form action="/download-file2">
+                        <button type="submit" class="btn btn-primary">Download</button>
+                        </form>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+
+
+</body>
+
+</html>
+</body>
+
+</html>

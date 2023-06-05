@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body, html {
+    height: 100%;
+}
+
+.filterby{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subfilterby{
+    margin-top: 100px;
+    width: 50%;
+}
+#table1{
+    visibility: hidden;
+}
+.surety{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    /* text-align: center; */
+    height: 200px;
+    width: 50%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+form div{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.btn{
+    padding-left: 20px;
+}
+
+form button{
+    background-color: rgb(69, 69, 245);
+    width: 150px;
+    font-size: 1.1em;
+    border-radius: 8px;
+}
